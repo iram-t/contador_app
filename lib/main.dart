@@ -9,6 +9,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Contador',
+      theme: ThemeData(
+        useMaterial3: true,
+        colorSchemeSeed: Colors.indigoAccent,
+      ),
       home: CounterScreen(),
     );
   }
